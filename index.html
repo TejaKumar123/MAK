@@ -1,0 +1,190 @@
+<!DOCTYTPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>MAK</title>
+<link rel="stylesheet" href="index.css">
+<link rel="icon" href="images/icon1.png">
+<script src="index.js"></script>
+
+</head>
+<body oncontextmenu="return false">
+
+<div id="sidepane">
+	<li style="list-style-type:none;font-size:45px;float:right;margin-right:5px;margin-top:-5px;;cursor:pointer;color:white;" onclick="sidepane(0)">&times;</li>
+	<div id="sidepanelink">
+		<a href="#p1" onclick="sidepane(0)">Home</a>
+		<a href="#p3" onclick="sidepane(0)">Features</a>
+		<a href="#p4" onclick="sidepane(0)">Contact us</a>
+		<li style="list-style-type:none;color:white;font-size:150%;list-style-type:none;margin-top:30px;text-align:center;;">Profile</li>
+	</div>
+	<div id="photo">
+		<img src="images/user.png" width="100%">
+	</div>
+
+</div>
+
+<div id="signup">
+	<div id="sign1">
+		<li id="cancels" onclick="open_sign_up(0)">&times;</li>
+		
+		<button class="loginup" onclick="opensign(0)">Sign In</button>
+		<button class="loginup" onclick="opensign(1)">Sign Up</button>
+		
+		<form id="signin" autocomplete="off">
+			<li style="list-style-type:none;font-weight:bold;font-size:35px;text-align:center;margin-top:15px;margin-bottom:35px;">Sign In</li>
+			<label for="usern">Username/Email</label><br>
+			<input type="text" id="usern" placeholder="Type your username/email" required><br>
+			<label for="passw">Password</label><br>
+			<input type="password" id="passw" required><br>
+			<a href="#" style="margin-top:10px;text-decoration:none;color:blue;font-size:90%;">Forgot Password?</a>
+			<input type="submit" value="Sign in">
+			
+		</form>
+		
+		<form id="signin1" autocomplete="off">
+			<li style="list-style-type:none;font-weight:bold;font-size:35px;text-align:center;margin-top:15px;margin-bottom:30px;">Sign Up</li>
+			<label for="fname">Full name</label><br>
+			<input type="text" id="fname" placeholder="Type your fullname" required><br>
+			<label for="uname">Username</label><br>
+			<input type="text" id="uname" placeholder="Type your username" required><br>
+			<label for="emil">Email</label><br>
+			<input type="email" id="emil" placeholder="example@gmail.com" required><br>
+			<label for="passw2">Password</label><br>
+			<input type="password" id="passw2" required><br>
+			<label for="passw1">Repeat password</label><br>
+			<input type="password" id="passw1" required><br>
+			<input id="check" type="checkbox" value="agree" name="check" >
+			<label for="check" style="font-size:90%;cursor:default;">I agree to the <b>terms and policies.</b></label>
+			<input type="submit" value="Sign up">
+		</form>
+		
+	</div>
+
+</div>
+
+<div id="header">
+	<div id="header0" >
+		<img src="icons/menu.svg" width="35px" alt="icon" onclick="sidepane(1)">
+		<img src="images/icon.png" id="icon">
+	</div>
+	<div id="header1">
+		<a href="#p1">Home</a>
+		<a href="#p2">About us</a>
+		<a href="#p3">Features</a>
+		<a href="#p4">Contact us</a>
+		<li onclick="open_sign_up(1)">Sign In/Up</li>
+	</div>
+</div>
+<!---<div style="width:100%;height:50px;"></div>-->
+<div id="p1" class="page">
+	<div id="p11">
+		<img id="icon" src="images/icon.png">
+		<li id="heading">INDIA'S FIRST STUDENTS MUTUAL <br>LEARNING PLATFORM</li>
+		<li style="text-align:center;color:white;list-style-type:none;font-size:125%;margin-top:15px;">Select the branch you wish to discuss.</li>
+		<center>
+		<div id="branch">
+			<li>BRANCH</li>
+			<div id="branches">
+				<a>CSE</a>
+				<a>ECE</a>
+				<a>EEE</a>
+				<a>Civil</a>
+				<a>Mechanical</a>
+				<a>Chemical</a>
+				<a>MME</a>
+				<a>Aeronautical</a>
+				<a>Environmental</a>
+				<a>Biotechnology</a>
+				<a>Industrial</a>
+				<a>Mining</a>
+				<a>Agriculture</a>
+				<a>Marine</a>
+				<a>Manufacturing</a>
+				
+
+			</div>
+		</div>
+		</center>
+	</div>
+</div>
+
+<div id="p2" class="page">
+<br><br><br>
+	<li style="list-style-type:none;font-size:55px;color:white;text-align:center;;">Introducing the platform</li>
+	<center><img src="images/icon.png" style="width:550px;"></center>
+</div>
+<div id="p3" class="page">
+	<br><br><br>
+	<li id="heading" >WELCOME TO MAK</li>
+	
+	<div id="welcome">
+		<div>
+			<a>
+				<div>
+					<img src="images/internship.webp">
+					<li>Internship</li>
+				</div>
+			</a>
+			<p></p>
+			<a>
+				<div>
+					<img src="images/knowledge.jpeg">
+					<li>Knowledge</li>
+				</div>
+			</a>
+		</div>
+		<div>
+			<a>
+				<div>
+					<img src="images/courses.png">
+					<li>Free courses</li>
+				</div>
+			</a>
+		</div>
+		<div>
+			<a>
+				<div>
+					<img src="images/communication.jpeg">
+					<li>Communication Skills</li>
+				</div>
+			</a>
+			<p></p>
+			<a>
+				<div>
+					<img src="images/connectivity.jpeg">
+					<li>Connectivity</li>
+				</div>
+			</a>
+		</div>	
+	</div>
+
+</div>
+
+<div id="p4" class="page">
+	<li id="heading">contact us</li>
+	<div id="p44">
+		<div id="p41">
+			<form id="contactform" autocomplete="off" method="post">
+				<input type="text" placeholder="Name" name="name">
+				<input type="email" placeholder="Email" name="email">
+				<input type="text" placeholder="Subject" name="subject">
+				<textarea placeholder="Message" name="message"></textarea>
+				<input type="submit" value="SUBMIT">
+			
+			</form>
+		</div>
+		<div id="p42">
+			<li id="suppo">support@<br>manamak.netlify.app<li>
+			<a href="https://www.instagram.com/invites/contact/?i=9o68102yspoz&utm_content=ogcrmko"><img src="icons/instagram.png" alt="instagram"></a>
+			<a href="#"><img src="icons/linkedin.png" alt="linkedin"></a>
+			
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>

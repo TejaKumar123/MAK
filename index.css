@@ -12,8 +12,8 @@ body::-webkit-scrollbar{width:0px}
 
 #header0{width:100px;height:40px;border:none;display:flex;flex-direction:row;align-items:center;justify-content:space-between;margin-left:20px;}
 #header0 #icon{width:45px}
-#header1{width:450px;height:40px;border:none;margin-right:30px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;}
-#header1 > a{text-decoration:none;color:black;font-size:95%;transition:0.05s transform;}
+#header1{width:350px;height:40px;border:none;margin-right:30px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;}
+#header1 > a{text-decoration:none;color:black;font-size:95%;transition:0.05s transform;cursor:pointer;}
 #header1 > a:hover{transform:scale(1.05,1.05);border-bottom:2px solid black;}
 #header1 > li{list-style-type:none;color:black;font-size:95%;border:1px solid black;padding:5px 10px;background-color:#73d216;border-radius:8px;box-shadow:0px 2px 0px black;cursor:pointer;}
 #header1 > li:active {transform:translateY(2px);box-shadow:none;}
@@ -45,10 +45,10 @@ body::-webkit-scrollbar{width:0px}
 .page{width:100%;height:100%;border:none;overflow:hidden;}
 
 /*page1*/
-#p1{background-image:none;border:none;border-bottom:none;}
-#p1 #p11{width:100%;height:100%;border:none;background-color:rgba(0,0,0,0.6);position:absolute;}
-#p11 #icon{width:140px;display:none;margin:auto;margin-top:100px;margin-bottom:-35px;}
-#p1 #p11 #heading{text-align:center;list-style-type:none;margin-top:13%;line-height:1.7;font-size:40px;font-weight:bold;color:white;}
+#p1{background-image:none;border:none;border-bottom:none;user-select:none;}
+#p1 #p11{width:100%;height:100%;border:none;background-color:rgba(0,0,0,0.6);position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+#p11 #icon{width:140px;display:none;margin:auto;margin-top:0px;margin-bottom:-35px;}
+#p1 #p11 #heading{text-align:center;list-style-type:none;margin-top:0%;line-height:1.7;font-size:40px;font-weight:bold;color:white;}
 #branch{width:150px;height:50px;border-radius:5px;border:none;margin-top:15px;}
 #branch > li{border-radius:5px;list-style-type:none;background-color:#73d216;margin:auto;padding:10px 4px;overflow:visible;transition:0.3s;border:1px solid black;cursor:default;}
 #branch > li:hover{background-color:#2999bf;}
@@ -59,7 +59,7 @@ body::-webkit-scrollbar{width:0px}
 #branches > a:hover{background-color:rgba(255,255,255,0.7);color:black;border-radius:5px;}
 #branch:hover #branches{height:220px;border:1px solid black;}
 
-#p2{background-color:rgba(0,0,0,0.6);border:none;}
+#p2{background-color:rgba(0,0,0,0.6);border:none;display:none;}
 
 /*page3*/
 #p3{border:none;height:950px;background-color:rgba(0,0,0,0.6);}
@@ -81,7 +81,7 @@ body::-webkit-scrollbar{width:0px}
 #p4 #p42{width:30%;height:200px;border:none;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;;}
 #p41 #contactform{width:100%;height:100%;border:none;}
 #p41 #contactform input{background:transparent;width:100%;height:45px;color:white;margin-top:20px;transition:0.35s;outline:none;border:none;border-bottom:2px solid white;padding-left:10px;font-size:110%;}
-#p41 #contactform textarea{width:100%;height:150px;background:transparent;border:none;border-bottom:2px solid white;outline:none;transition:0.35s;margin-top:20px;color:white;padding-left:10px;padding-top:10px;font-size:110%;}
+#p41 #contactform textarea{width:100%;height:150px;background:transparent;border:none;border-bottom:2px solid white;outline:none;transition:0.35s;margin-top:20px;color:white;padding-left:10px;padding-top:10px;font-size:110%;resize:none;}
 #p41 #contactform input:focus{outline:1px solid white;border-top-left-radius:20px;border-bottom-right-radius:20px;}
 #p41 #contactform textarea:focus{outline:1px solid white;border-top-left-radius:20px;border-bottom-right-radius:20px;}
 #p41 #contactform input[type="submit"]{background:#73d216;width:100%;height:45px;color:black;margin-top:35px;outline:none;border:none;font-size:110%;text-align:center;cursor:pointer;}
@@ -105,7 +105,7 @@ body{background-image:url("images/bac.avif");}
 .loginup{width:40%;}
 #sign1 #cancels{margin:0px 0px 0px 0px;background-color:#2999bf;border-radius:10px;}
 #p11 #icon{display:block;}
-#p1 #p11 #heading{font-size:20px;font-weight:bold;}
+#p1 #p11 #heading{font-size:20px;font-weight:bold;margin-top:13%;}
 #branch:hover #branches{height:180px;}
 #p2{display:none;}
 #p3{height:1400px;}

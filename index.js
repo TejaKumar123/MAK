@@ -1,4 +1,11 @@
 
+function fullscr(){
+	document.documentElement.requestFullscreen();
+}
+function propa(event){
+	event.stopPropagation();
+}
+
 function sidepane(n){
 s=document.getElementById('sidepane');
 if(n==1){
@@ -59,6 +66,12 @@ m[0].style.boxShadow="none";
 m[0].style.backgroundColor="#2999bf";
 }
 
+}
+
+function scrol_to(id){
+	let y=document.getElementById(id).offsetTop;
+	window.scrollTo(0,y);
+	sidepane(0)
 }
 
 

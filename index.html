@@ -3,7 +3,7 @@
 <head>
 
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>MAK</title>
+<title>SLP</title>
 <link rel="stylesheet" href="index.css">
 <link rel="icon" href="images/icon1.png">
 <script src="index.js"></script>
@@ -14,9 +14,9 @@
 <div id="sidepane">
 	<li style="list-style-type:none;font-size:45px;float:right;margin-right:5px;margin-top:-5px;;cursor:pointer;color:white;" onclick="sidepane(0)">&times;</li>
 	<div id="sidepanelink">
-		<a href="#p1" onclick="sidepane(0)">Home</a>
-		<a href="#p3" onclick="sidepane(0)">Features</a>
-		<a href="#p4" onclick="sidepane(0)">Contact us</a>
+		<a hre="#p1" onclick="scrol_to('p1')">Home</a>
+		<a hre="#p3" onclick="scrol_to('p3')">Features</a>
+		<a hre="#p4" onclick="scrol_to('p4')">Contact us</a>
 		<li style="list-style-type:none;color:white;font-size:150%;list-style-type:none;margin-top:30px;text-align:center;;">Profile</li>
 	</div>
 	<div id="photo">
@@ -25,8 +25,8 @@
 
 </div>
 
-<div id="signup">
-	<div id="sign1">
+<div id="signup" onclick="this.children[0].children[0].click()" onclick="alert(5)">
+	<div id="sign1" onclick="propa(event)">
 		<li id="cancels" onclick="open_sign_up(0)">&times;</li>
 		
 		<button class="loginup" onclick="opensign(0)">Sign In</button>
@@ -67,21 +67,21 @@
 <div id="header">
 	<div id="header0" >
 		<img src="icons/menu.svg" width="35px" alt="icon" onclick="sidepane(1)">
-		<img src="images/icon.png" id="icon">
+		<img src="images/icon.png" id="icon" style="display:none;">
 	</div>
 	<div id="header1">
-		<a href="#p1">Home</a>
-		<a href="#p2">About us</a>
-		<a href="#p3">Features</a>
-		<a href="#p4">Contact us</a>
+		<a hre="#p1" onclick="scrol_to('p1')">Home</a>
+		<!---<a hre="#p2" onclick="scrol_to('p2')">About us</a>--->
+		<a hre="#p3" onclick="scrol_to('p3')">Features</a>
+		<a hre="#p4" onclick="scrol_to('p4')">Contact us</a>
 		<li onclick="open_sign_up(1)">Sign In/Up</li>
 	</div>
 </div>
 <!---<div style="width:100%;height:50px;"></div>-->
 <div id="p1" class="page">
 	<div id="p11">
-		<img id="icon" src="images/icon.png">
-		<li id="heading">INDIA'S FIRST STUDENTS MUTUAL <br>LEARNING PLATFORM</li>
+		<img id="icon" src="images/icon.png" style="display:none;">
+		<li id="heading">STUDENTS MUTUAL <br>LEARNING PLATFORM</li>
 		<li style="text-align:center;color:white;list-style-type:none;font-size:125%;margin-top:15px;">Select the branch you wish to discuss.</li>
 		<center>
 		<div id="branch">
@@ -117,7 +117,7 @@
 </div>
 <div id="p3" class="page">
 	<br><br><br>
-	<li id="heading" >WELCOME TO MAK</li>
+	<li id="heading" >WELCOME TO SLP</li>
 	
 	<div id="welcome">
 		<div>
@@ -176,9 +176,9 @@
 			</form>
 		</div>
 		<div id="p42">
-			<li id="suppo">support@<br>manamak.netlify.app<li>
-			<a href="https://www.instagram.com/invites/contact/?i=9o68102yspoz&utm_content=ogcrmko"><img src="icons/instagram.png" alt="instagram"></a>
-			<a href="#"><img src="icons/linkedin.png" alt="linkedin"></a>
+			<li id="suppo">support@<br>tejaslp.netlify.app<li>
+			<a href=""><img src="icons/instagram.png" alt="instagram"></a>
+			<a href=""><img src="icons/linkedin.png" alt="linkedin"></a>
 			
 		</div>
 	</div>
